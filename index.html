@@ -5,7 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camp Quiz Generator</title>
 </head>
-<body onLoad="redirectRand()">
+<body onLoad="setup()">
+    <div>
+        <div>
+            <h3 id="count">Question: 0/10</h3>
+        </div>
+        <div>
+            <h3 id="correct">Correct: 0/10</h3>
+        </div>
+    </div>
+
+    
+    <div class="choice">
+        <h3 id="question">placeholder</h3>
+        <div class="options"><input type="radio" name="options" value="option1" id="opt0"><label name="optionslb" for="opt0" id="lb0">Option1</label></div>
+        <div class="options"><input type="radio" name="options" value="option2" id="opt1"><label name="optionslb" for="opt1" id="lb1">Option2</label></div>
+        <div class="options"><input type="radio" name="options" value="option3" id="opt2"><label name="optionslb" for="opt2" id="lb2">Option3</label></div>
+        <div class="options"><input type="radio" name="options" value="option4" id="opt3"><label name="optionslb" for="opt3" id="lb3">Option4</label></div>   
+    </div>
+
+    <div>
+        <button id="next" onclick="nextButton()">Next</button>
+    </div>
+    
     <script src="./index.js" type="text/javascript"></script>
 </body>
 </html>
