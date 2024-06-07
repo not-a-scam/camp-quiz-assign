@@ -21,7 +21,7 @@ const bank = new Array(
     new Array("How many letters are there in nice?", "1", "2", "3", "4", 4),
     new Array("How many letters are there in ant?", "1", "2", "3", "4", 3),
     new Array("How many letters are there in by?", "1", "2", "3", "4", 2),
-    new Array("How many letters are there in ant?", "1", "2", "3", "4", 3),
+    new Array("How many letters are there in toe?", "1", "2", "3", "4", 3),
     new Array("How many letters are there in bee?", "1", "2", "3", "4", 3),
     new Array("How many letters are there in a?", "1", "2", "3", "4", 1),
     new Array("How many letters are there in no?", "1", "2", "3", "4", 2),
@@ -72,6 +72,7 @@ function nextButton(){
                 document.getElementById("correct").innerHTML = "Correct: " + correctAnswers + "/10";
             }
             options[i].checked = false;
+            options[i].parentElement.className = "options";
             oneTick = true;
         }
     }
@@ -83,11 +84,44 @@ function nextButton(){
         if(questionsAnswered == quizLength){
             document.getElementById("next").hidden = true;
             document.getElementsByClassName("choice")[0].hidden = true;
+            document.getElementsByClassName("end")[0].hidden = false;
+            let finalMessage = "";
+            let finalCTA = "";
+
+            if(correctAnswers >= 8){
+                finalMessage = "You passed the test!"
+                finalCTA = "Head to the counter at the back of the auditorium to get your game card signed!"
+            } else {
+                finalMessage = "Good Attempt!"
+                finalCTA = "Refresh this page to try again!"
+            }
+
+            document.getElementById("final-message").textContent = finalMessage;
+            document.getElementById("final-cta").textContent = finalCTA;
+
         } else {
             if (questionsAnswered == quizLength - 1){
                 document.getElementById("next").innerHTML = "Submit";
             }
             newQuestion();
+        }
+    }
+}
+
+function startQuiz() {
+    document.getElementsByClassName("start")[0].hidden = true;
+    document.getElementsByClassName("choice")[0].hidden = false;
+}
+
+function optionClick(radio){
+    radio.checked = true;
+    let optionsD = document.getElementsByClassName("options");
+
+    for(i = 0; i < optionsD.length; i++){
+        if(optionsD[i].firstChild.checked){
+            optionsD[i].className = "options checked";
+        } else {
+            optionsD[i].className = "options";
         }
     }
 }

@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Exo", sans-serif;
+    color: #1F2041;
+}
+
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bg1 {
+    background-color: #4B3F72;
+}
+
+.title {
+    margin: 2em 4em 0 4em;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    border-width: .2em;
+    border-color: #1F2041;
+    border-style: solid;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 2em;
+    padding: .5rem .5rem 0;
+}
+
+.title h2 {
+    font-size: 1.5em;
+    padding: 0 .5rem .5rem;
+}
+
+.progress-bar{
+    display: flex;
+    margin: 2em;
+}
+
+.progress-bar-column {
+    flex: 50%;
+    background-color: rgb(173, 195, 214);
+    display: grid;
+    justify-items: center;
+    padding: .5em 0;
+}
+
+.result {
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.current {
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.choice {
+    background-color: rgb(173, 195, 214);
+    margin: 1em 2em 0 2em;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.choice h4 {
+    padding-bottom: 1em;
+}
+
+.options {
+    padding: .5em 1em;
+    background-color: #FFFFFF;
+    margin: .3em 0;
+    border-radius: 1em;
+}
+
+input:checked{
+    background-color: #4B3F72;
+}
+
+.choice button {
+    margin: 1em 1em 0;
+    padding: .5em 1em;
+    font-size: 1em;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: #1F2041;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
+.container2{
+    text-align: center;
+}
+
+.start {
+    margin: 2em 2em 2em 2em;
+    text-align: center;
+    background-color: rgb(173, 195, 214);
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.start h4{
+    padding: 2em 2em 1em 2em;
+}
+
+.start button{
+    margin: 1em 2em 2em 2em;
+    padding: 1em 3em;
+    font-size: 1em;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: #1F2041;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
+.end {
+    margin: 2em 2em 2em 2em;
+    text-align: center;
+    background-color: rgb(173, 195, 214);
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.options.checked {
+    background-color: #a1a1a1;
+}
