@@ -68,6 +68,12 @@
     margin: 1em 2em 0 2em;
     padding: 2em;
     border-radius: 1em;
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+.choice.fade {
+    opacity: 0;
 }
 
 .choice h4 {
@@ -129,6 +135,10 @@ input:checked{
     background-color: rgb(173, 195, 214);
     padding: 2em;
     border-radius: 1em;
+}
+
+.end h4 {
+    padding-bottom: 1em;
 }
 
 .options.checked {

@@ -63,6 +63,7 @@ function newQuestion(){
 }
 
 function nextButton(){
+
     let ans = bank[questionsAnswered][5];
     let oneTick = false;
     for(i = 0; i < options.length; i++){
@@ -78,34 +79,43 @@ function nextButton(){
     }
 
     if(oneTick){
-        questionsAnswered++;
-        document.getElementById("count").innerHTML = "Question: " + questionsAnswered + "/10";
+
+        document.getElementsByClassName("choice")[0].className = 'choice fade';
+        setTimeout(function(){
+            questionsAnswered++;
+            document.getElementById("count").innerHTML = "Question: " + questionsAnswered + "/10";
+        
+            if(questionsAnswered == quizLength){
+                document.getElementById("next").hidden = true;
+                document.getElementsByClassName("choice")[0].hidden = true;
+                document.getElementsByClassName("end")[0].hidden = false;
+                let finalMessage = "";
+                let finalCTA = "";
     
-        if(questionsAnswered == quizLength){
-            document.getElementById("next").hidden = true;
-            document.getElementsByClassName("choice")[0].hidden = true;
-            document.getElementsByClassName("end")[0].hidden = false;
-            let finalMessage = "";
-            let finalCTA = "";
-
-            if(correctAnswers >= 8){
-                finalMessage = "You passed the test!"
-                finalCTA = "Head to the counter at the back of the auditorium to get your game card signed!"
+                if(correctAnswers >= 8){
+                    finalMessage = "You passed the test!"
+                    finalCTA = "Head to the counter at the back of the auditorium to get your game card signed!"
+                } else {
+                    finalMessage = "Good Attempt!"
+                    finalCTA = "Refresh this page to try again!"
+                }
+    
+                document.getElementById("final-message").textContent = finalMessage;
+                document.getElementById("final-cta").textContent = finalCTA;
+    
             } else {
-                finalMessage = "Good Attempt!"
-                finalCTA = "Refresh this page to try again!"
+                if (questionsAnswered == quizLength - 1){
+                    document.getElementById("next").innerHTML = "Submit";
+                }
+                newQuestion();
             }
 
-            document.getElementById("final-message").textContent = finalMessage;
-            document.getElementById("final-cta").textContent = finalCTA;
-
-        } else {
-            if (questionsAnswered == quizLength - 1){
-                document.getElementById("next").innerHTML = "Submit";
-            }
-            newQuestion();
-        }
+            document.getElementsByClassName("choice")[0].classList.toggle('fade');
+            setTimeout(function(){console.log("unfaded")}, 1000);
+        }, 1000);
+        
     }
+
 }
 
 function startQuiz() {
