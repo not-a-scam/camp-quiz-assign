@@ -70,7 +70,6 @@ function nextButton(){
         if(options[i].checked){
             if(i == ans-1){
                 correctAnswers++;
-                document.getElementById("correct").innerHTML = "Correct: " + correctAnswers + "/10";
             }
             options[i].checked = false;
             options[i].parentElement.className = "options";
@@ -79,12 +78,12 @@ function nextButton(){
     }
 
     if(oneTick){
+        questionsAnswered++;
+        document.getElementById("count").innerHTML = "Question: " + questionsAnswered + "/10";
+        document.getElementById("correct").innerHTML = "Correct: " + correctAnswers + "/10";
 
         document.getElementsByClassName("choice")[0].className = 'choice fade';
         setTimeout(function(){
-            questionsAnswered++;
-            document.getElementById("count").innerHTML = "Question: " + questionsAnswered + "/10";
-        
             if(questionsAnswered == quizLength){
                 document.getElementById("next").hidden = true;
                 document.getElementsByClassName("choice")[0].hidden = true;
