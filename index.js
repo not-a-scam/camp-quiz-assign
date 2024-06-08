@@ -110,8 +110,8 @@ function nextButton(){
             }
 
             document.getElementsByClassName("choice")[0].classList.toggle('fade');
-            setTimeout(function(){console.log("unfaded")}, 1000);
-        }, 1000);
+            setTimeout(function(){console.log("unfaded")}, 500);
+        }, 500);
         
     }
 
