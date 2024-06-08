@@ -17,28 +17,27 @@ function Question(question, option1, option2, option3, option4, answer){
 }
 
 const bank = new Array(
-    new Array("How many letters are there in cool?", "1", "2", "3", "4", 4),
-    new Array("How many letters are there in nice?", "1", "2", "3", "4", 4),
-    new Array("How many letters are there in ant?", "1", "2", "3", "4", 3),
-    new Array("How many letters are there in by?", "1", "2", "3", "4", 2),
-    new Array("How many letters are there in toe?", "1", "2", "3", "4", 3),
-    new Array("How many letters are there in bee?", "1", "2", "3", "4", 3),
-    new Array("How many letters are there in a?", "1", "2", "3", "4", 1),
-    new Array("How many letters are there in no?", "1", "2", "3", "4", 2),
-    new Array("How many letters are there in cram?", "1", "2", "3", "4", 4),
-    new Array("How many letters are there in tide?", "1", "2", "3", "4", 4),
-    new Array("How many letters are there in new?", "1", "2", "3", "4", 3),
-    new Array("How many letters are there in got?", "1", "2", "3", "4", 3),
-    new Array("How many letters are there in slew?", "1", "2", "3", "4", 4),
-    new Array("How many letters are there in move?", "1", "2", "3", "4", 4),
-    new Array("How many letters are there in bone?", "1", "2", "3", "4", 4),
-    new Array("How many letters are there in sea?", "1", "2", "3", "4", 3),
-    new Array("How many letters are there in to?", "1", "2", "3", "4", 2),
-    new Array("How many letters are there in rim?", "1", "2", "3", "4", 3),
-    new Array("How many letters are there in fox?", "1", "2", "3", "4", 3),
-    new Array("How many letters are there in once?", "1", "2", "3", "4", 4),
-    new Array("How many letters are there in four?", "1", "2", "3", "4", 4),
-    new Array("How many letters are there in one?", "1", "2", "3", "4", 3)
+    
+    new Array("How many priests were told to walk in front of the ark for the battle of Jericho in Joshua 6:6-27?", "Seven", "Six", "Ten", "Fifteen", 1),
+    new Array("According to James chapter 4, from where do conflicts and quarrels come among you?", "Passions at war within us", "Laws of sin and death", "Enmity with world", "Ourselves", 1),
+    new Array("Which item of the armour is a symbol of righteousness?", "Shield", "Sword", "Breastplate", "Helmet", 3),
+    new Array("Complete Jehoshaphat’s prayer “we do not know what to do, but _____ ? ", "our trust is in you", "we will still stand firm", "our faith will not be shaken", "our eyes are on you", 4),
+    new Array("Who fought the battle of Jericho?", "Caleb", "Joshua", "Moses", "David", 2),
+    new Array("What was the name of the giant that David killed?", "Goliath", "His fears and insecurities", "Samson", "Sin", 1),
+    new Array("Who was the enemy that took the ark of the covenant?", "Philistines", "Moabites", "Babylonians", "Canaanites", 1),
+    new Array("Which book of the bible says there is a time of war and a time of peace?", "Proverbs", "Psalms", "Ecclesiastes", "Songs of Solomon", 3),
+    new Array("In Ephesians 6:12, the wrestle is against principalities, powers, rulers of the darkness of this age, spiritual hosts of wickedness in the heavenly places, and not against?", "Flesh and Blood", "Sin and the world", "Flesh and Sin", "Blood and Sin", 1),
+    new Array("What is not the name of the devil?", "The opposer", "Accuser", "Prince of the power of the air", "Baal", 4),
+    new Array("The Lord of Hosts is one of the names of God in English. What is the Hebrew translation of this name of His?", "Jehovah Jireh", "Jehovah Nissi", "Jehovah Rapha", "Jehovah Sabaoth", 4),
+    new Array("What did God commission Joshua with?", "Be strong and courageous", "Be bold and stand strong", "Be courageous and of good faith", "Be shrewd as serpents and innocent as doves", 1),
+    new Array("Joshua son of ____", "Moses", "Nun", "Ephraim", "Joseph", 2),
+    new Array("Caleb was said to have a different ____.", "Faith", "Spirit", "Heart", "Appearance", 2),
+    new Array("Who is Eleazar’s father?", "Jesse", "Agee", "Dodo", "Zeruiah", 3),
+    new Array("What weapon did Benaiah go into war with when he struck down the Egyptian?", "Staff", "Sword", "Spear", "Stones", 1),
+    new Array("What was the plot of land Shammah defended filled with?", "Lentils", "Myrtles", "Figs", "Melons", 1),
+    new Array("What is the name of this camp?", "Camp Set Apart", "Camp Withstand", "Camp Stand Firm", "Camp Stand Up", 2),
+    new Array("Who was holding the flag just now during the briefing?", "Darryl", "Zech", "Don", "Alicia", 2),
+    new Array("Who is the chief of David’s mighty man?", "Abishai", "Jehoiada", "Joab", "Josheb-basshebeth", 4)
 )
 
 function shuffleArray(array) {
