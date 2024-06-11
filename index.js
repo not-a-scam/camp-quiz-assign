@@ -36,7 +36,7 @@ const bank = new Array(
     new Array("What weapon did Benaiah go into war with when he struck down the Egyptian?", "Staff", "Sword", "Spear", "Stones", 1),
     new Array("What was the plot of land Shammah defended filled with?", "Lentils", "Myrtles", "Figs", "Melons", 1),
     new Array("What is the name of this camp?", "Camp Set Apart", "Camp Withstand", "Camp Stand Firm", "Camp Stand Up", 2),
-    new Array("Who was holding the flag just now during the briefing?", "Darryl", "Zech", "Don", "Alicia", 2),
+    new Array("Who was holding the flag just now during the briefing?", "Darryl", "Zech", "Don", "Alicia", 3),
     new Array("Who is the chief of David’s mighty man?", "Abishai", "Jehoiada", "Joab", "Josheb-basshebeth", 4)
 )
 
