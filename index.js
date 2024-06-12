@@ -18,26 +18,26 @@ function Question(question, option1, option2, option3, option4, answer){
 
 const bank = new Array(
     
-    new Array("How many priests were told to walk in front of the ark for the battle of Jericho in Joshua 6:6-27?", "Seven", "Six", "Ten", "Fifteen", 1),
-    new Array("According to James chapter 4, from where do conflicts and quarrels come among you?", "Passions at war within us", "Laws of sin and death", "Enmity with world", "Ourselves", 1),
+    new Array("What did Caleb declare?" "Give me this ___", "Mountain", "Field", "Land", "Sea", 1),
+    new Array("Which item of the armour is a symbol of salvation?", "Belt", "Shoes", "Sword", "Helmet", 4),
     new Array("Which item of the armour is a symbol of righteousness?", "Shield", "Sword", "Breastplate", "Helmet", 3),
     new Array("Complete Jehoshaphat’s prayer “we do not know what to do, but _____ ? ", "our trust is in you", "we will still stand firm", "our faith will not be shaken", "our eyes are on you", 4),
     new Array("Who fought the battle of Jericho?", "Caleb", "Joshua", "Moses", "David", 2),
     new Array("What was the name of the giant that David killed?", "Goliath", "His fears and insecurities", "Samson", "Sin", 1),
-    new Array("Who was the enemy that took the ark of the covenant?", "Philistines", "Moabites", "Babylonians", "Canaanites", 1),
-    new Array("Which book of the bible says there is a time of war and a time of peace?", "Proverbs", "Psalms", "Ecclesiastes", "Songs of Solomon", 3),
+    new Array("Who crossed the red sea?", "Moses", "Caleb", "David", "Jesus", 1),
+    new Array("Which book of the bible says there is a time of war and a time of peace?", "Matthew", "Genesis", "Ecclesiastes", "Leviticus", 3),
     new Array("In Ephesians 6:12, the wrestle is against principalities, powers, rulers of the darkness of this age, spiritual hosts of wickedness in the heavenly places, and not against?", "Flesh and Blood", "Sin and the world", "Flesh and Sin", "Blood and Sin", 1),
-    new Array("What is not the name of the devil?", "The opposer", "Accuser", "Prince of the power of the air", "Baal", 4),
-    new Array("The Lord of Hosts is one of the names of God in English. What is the Hebrew translation of this name of His?", "Jehovah Jireh", "Jehovah Nissi", "Jehovah Rapha", "Jehovah Sabaoth", 4),
-    new Array("What did God commission Joshua with?", "Be strong and courageous", "Be bold and stand strong", "Be courageous and of good faith", "Be shrewd as serpents and innocent as doves", 1),
-    new Array("Joshua son of ____", "Moses", "Nun", "Ephraim", "Joseph", 2),
+    new Array("How many stones did David go to battle with?", "one", "three", "five", "seven", 3),
+    new Array("What is pastor sam's middle name?", "Jubilee", "Jireh", "Joshua", "Jubi", 4),
+    new Array("What did God commission Joshua with?", "Be strong and courageous", "Be innocent as doves", "Be courageous and of good faith", "Be shrewd as serpents", 1),
+    new Array("Joshua son of ____", "Naan", "Nun", "None", "Nan", 2),
     new Array("Caleb was said to have a different ____.", "Faith", "Spirit", "Heart", "Appearance", 2),
-    new Array("Who is Eleazar’s father?", "Jesse", "Agee", "Dodo", "Zeruiah", 3),
-    new Array("What weapon did Benaiah go into war with when he struck down the Egyptian?", "Staff", "Sword", "Spear", "Stones", 1),
-    new Array("What was the plot of land Shammah defended filled with?", "Lentils", "Myrtles", "Figs", "Melons", 1),
+    new Array("Which one of the options is not a tribe name?", "Benaiah", "David", "Shammah", "Jehoshaphat", 2),
+    new Array("Who sentenced Jesus to death?", "Pilate", "Nebuchadnezaar", "Julius Caesar", "David", 1),
+    new Array("Which item of the armour is a symbol of truth?", "Belt", "Shield", "Helmet", "Sword", 1),
     new Array("What is the name of this camp?", "Camp Set Apart", "Camp Withstand", "Camp Stand Firm", "Camp Stand Up", 2),
     new Array("Who was holding the flag just now during the briefing?", "Darryl", "Zech", "Don", "Alicia", 3),
-    new Array("Who is the chief of David’s mighty man?", "Abishai", "Jehoiada", "Joab", "Josheb-basshebeth", 4)
+    new Array("Eleazar fought until the sword ___", "slipped out of his hand", "flew out from his hand", "broke in his hand", "clung to his hand", 4)
 )
 
 function shuffleArray(array) {
