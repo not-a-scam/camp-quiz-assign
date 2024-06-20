@@ -7,15 +7,6 @@ const quizLength = 10;
 const optionslb = document.getElementsByName("optionslb");
 const options = document.getElementsByName("options");
 
-function Question(question, option1, option2, option3, option4, answer){
-    this.q = question;
-    this.op1 = option1;
-    this.op2 = option2;
-    this.op3 = option3;
-    this.op4 = option4;
-    this.ans = answer;
-}
-
 const bank = new Array(
     
     new Array("What did Caleb declare?" "Give me this ___", "Mountain", "Field", "Land", "Sea", 1),
@@ -38,7 +29,7 @@ const bank = new Array(
     new Array("What is the name of this camp?", "Camp Set Apart", "Camp Withstand", "Camp Stand Firm", "Camp Stand Up", 2),
     new Array("Who was holding the flag just now during the briefing?", "Darryl", "Zech", "Don", "Alicia", 3),
     new Array("Eleazar fought until the sword ___", "slipped out of his hand", "flew out from his hand", "broke in his hand", "clung to his hand", 4)
-)
+);
 
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
