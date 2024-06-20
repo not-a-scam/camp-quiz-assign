@@ -9,7 +9,7 @@ const options = document.getElementsByName("options");
 
 const bank = new Array(
     
-    new Array("What did Caleb declare?", "Give me this ___", "Mountain", "Field", "Land", "Sea", 1),
+    new Array("What did Caleb declare? 'Give me this ___' ", "Mountain", "Field", "Land", "Sea", 1),
     new Array("Which item of the armour is a symbol of salvation?", "Belt", "Shoes", "Sword", "Helmet", 4),
     new Array("Which item of the armour is a symbol of righteousness?", "Shield", "Sword", "Breastplate", "Helmet", 3),
     new Array("Complete Jehoshaphat’s prayer “we do not know what to do, but _____ ? ", "our trust is in you", "we will still stand firm", "our faith will not be shaken", "our eyes are on you", 4),
